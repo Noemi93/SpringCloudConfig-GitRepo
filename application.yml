@@ -1,0 +1,2 @@
+#sample.property=sample
+spring.cloud.config.failFast=false
