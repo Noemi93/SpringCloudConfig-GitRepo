@@ -1,5 +1,5 @@
 server:
-  port: port:2222
+  port: port:8091
 
 # Discovery Server Access
 eureka:
