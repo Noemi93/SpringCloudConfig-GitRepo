@@ -11,12 +11,13 @@ eureka:
 
 zuul:
   ignoredServices: '*'
-  host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
+  #host:
+    #connect-timeout-millis: 20000
+    #socket-timeout-millis: 20000
     routes:
       cat-service: # Service to create as sample
         path: /app/** #path that will be intercepted
         url: http://localhost:8070 #which url the request will e mapped to
-        stripPrefix: false  #if zuul should replace the "/sample/" segment
-        sensitiveHeaders:
+        #stripPrefix: false  #if zuul should replace the "/sample/" segment
+        #stripPrefix: true
+        #sensitiveHeaders:
