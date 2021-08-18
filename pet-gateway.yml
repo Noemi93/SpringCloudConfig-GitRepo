@@ -10,6 +10,8 @@ eureka:
         defaultZone: http://localhost:1111/eureka/
 
 zuul:
+  ignore-security-headers: false
+  ignored-headers: cookie,set-cookie
   ignoredServices: '*'
   #host:
     #connect-timeout-millis: 20000
@@ -21,3 +23,5 @@ zuul:
         #stripPrefix: false  #if zuul should replace the "/sample/" segment
         #stripPrefix: true
         #sensitiveHeaders:
+        stripPrefix: true
+        sensitive-headers: Cookie,Set-Cookie
