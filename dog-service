@@ -1,0 +1,10 @@
+server:
+  port: ${port:8090}
+
+# Discovery Server Access
+eureka:
+    client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+        defaultZone: http://localhost:1111/eureka/
